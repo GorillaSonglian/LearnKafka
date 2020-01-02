@@ -25,6 +25,7 @@ public class Main {
             producer.send(new ProducerRecord<String, String>("my-topic", Integer.toBinaryString(i), Integer.toString(i)));
         }
 
+
         producer.close();
     }
 }
